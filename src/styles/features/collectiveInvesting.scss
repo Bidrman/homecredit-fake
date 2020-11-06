@@ -1,0 +1,16 @@
+.collective-investing {
+    &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__text {
+        line-height: 29px !important;
+        color: $lightGray;
+    }
+
+    &__heading {
+        font-size: 32px;
+    }
+}

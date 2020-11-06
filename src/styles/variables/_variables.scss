@@ -1,0 +1,80 @@
+@import '~bootstrap/scss/functions';
+
+//backgrounds
+
+//colors
+
+$blue: #7fd0d3 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$orange: #f29614 !default;
+$red: #d30010 !default;
+$yellow: #ffe42f !default;
+$white: #ffffff !default;
+$black: #000000 !default;
+$lightGray: #dfe4e6 !default;
+
+$colors: () !default;
+$colors: map-merge(
+    (
+        'blue': $blue,
+        'indigo': $indigo,
+        'purple': $purple,
+        'orange': $orange,
+        'red': $red,
+        'yellow': $yellow,
+        'white': $white,
+        'black': $black,
+        'gray': $lightGray,
+    ),
+    $colors
+);
+$primary: $red !default;
+$secondary: $yellow !default;
+$success: $purple !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $lightGray !default;
+$dark: $black !default;
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+        'primary': $primary,
+        'secondary': $secondary,
+        'success': $success,
+        'info': $info,
+        'warning': $warning,
+        'danger': $danger,
+        'light': $light,
+        'dark': $dark,
+    ),
+    $theme-colors
+);
+$theme-colors: map-merge($theme-colors, $colors);
+
+// breakpoints
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 980px,
+    xl: 1199px,
+) !default;
+
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
+@include _assert-starts-at-zero($grid-breakpoints, '$grid-breakpoints');
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+    sm: 540px,
+    md: 760px,
+    lg: 980px,
+    xl: 1232px,
+) !default;
+
+@include _assert-ascending($container-max-widths, '$container-max-widths');

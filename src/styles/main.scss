@@ -1,0 +1,98 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Campton', sans-serif;
+    font-weight: 300;
+    color: $lightGray;
+}
+
+header {
+    background: $white;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    cursor: pointer;
+    font-weight: 400;
+}
+
+// custom classes //
+
+// background
+.bg-gray {
+    background: $lightGray;
+}
+
+.bg-red {
+    background: $red;
+}
+//border
+.rounded {
+    border-radius: 6px !important;
+}
+//font size
+.font-14 {
+    font-size: 14px !important;
+}
+
+.font-18 {
+    font-size: 18px !important;
+}
+
+.font-20 {
+    font-size: 20px !important;
+}
+
+.font-28 {
+    font-size: 28px !important;
+}
+
+.font-36 {
+    font-size: 36px !important;
+}
+
+.font-62 {
+    font-size: 62px !important;
+}
+
+.font-72 {
+    font-size: 72px !important;
+}
+//font color
+.text-black {
+    color: $black;
+}
+
+.text-graish {
+    color: #0a100d;
+}
+// font decor
+.text-underlined {
+    text-decoration: underline !important;
+}
+
+.text-normal {
+    text-decoration: none !important;
+}
+
+// spacing
+.mb-6 {
+    margin-bottom: 4rem !important;
+}
+
+@include media-breakpoint-down(md) {
+    body {
+        text-align: center;
+    }
+
+    .ghost {
+        display: none;
+    }
+}

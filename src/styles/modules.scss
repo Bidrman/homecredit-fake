@@ -1,0 +1,22 @@
+@import './sanitize.scss';
+@import './variables/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap';
+@import './main.scss';
+
+@import './navigation/navigation';
+@import './subfooter/subfooter';
+@import './footer/footer';
+
+//Features
+@import './features/hero';
+@import './features/customCard';
+@import './features/invest';
+@import './features/collectiveInvesting';
+@import './features/thoughts';
+@import './features/easyBegin';
+
+// FONTS
+@import './typography/font-family';
+@import './typography/fonts';
+@import './typography/headings';
+@import './typography/links';
