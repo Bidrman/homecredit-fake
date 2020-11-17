@@ -7,7 +7,7 @@ body {
     line-height: 1.6;
     font-family: 'Campton', sans-serif;
     font-weight: 300;
-    color: $lightGray;
+    color: $darkGray;
 }
 
 header {
@@ -65,13 +65,26 @@ a {
 .font-72 {
     font-size: 72px !important;
 }
-//font color
-.text-black {
-    color: $black;
+// font weight
+.font-300 {
+    font-weight: 300 !important;
 }
 
-.text-graish {
-    color: #0a100d;
+.font-700 {
+    font-weight: 700 !important;
+}
+
+//font color
+.text-black {
+    color: $black !important;
+}
+
+.text-red {
+    color: $red !important;
+}
+
+.text-gray {
+    color: $darkGray !important;
 }
 // font decor
 .text-underlined {

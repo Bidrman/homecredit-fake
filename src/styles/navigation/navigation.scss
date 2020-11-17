@@ -21,8 +21,45 @@
         }
     }
 
-    &__list {
-        margin-top: -1rem;
+    .navigation__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .upper-navigation {
+        &-link {
+            display: flex !important;
+            align-items: center !important;
+            padding: 13px 20px !important;
+
+            ul,
+            li {
+                line-height: 16px !important;
+            }
+
+            svg {
+                display: flex;
+                justify-self: center;
+                align-self: center;
+            }
+
+            &:hover {
+                color: $red !important;
+
+                .icon svg path {
+                    fill: $red;
+                }
+            }
+        }
+
+        li::before {
+            content: none !important;
+        }
+    }
+
+    &__hr {
+        height: 1px;
+        background: $gray;
     }
 
     @include media-breakpoint-down(md) {

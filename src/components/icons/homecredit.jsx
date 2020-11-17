@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Airbank = () => {
+const Homecredit = () => {
     return (
         <svg width='85' height='35' viewBox='0 0 612 259.4'>
             <g>
@@ -17,4 +17,4 @@ const Airbank = () => {
     )
 }
 
-export default Airbank
+export default Homecredit

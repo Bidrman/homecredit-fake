@@ -1,0 +1,91 @@
+@import '../../styles/variables/variables';
+
+.upperlink {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+
+    &:hover {
+        color: $red !important;
+
+        div svg path {
+            fill: $red;
+        }
+    }
+}
+
+.upperlink div svg {
+    margin-right: 7px;
+    margin-bottom: 3px;
+}
+
+.upperlink:last-of-type {
+    color: $red !important;
+    background: $info;
+}
+
+.link {
+    position: relative;
+    text-decoration: none;
+    display: flex !important;
+    line-height: 17px;
+    color: $black !important;
+    text-transform: uppercase;
+    font-weight: 700 !important;
+    padding: 10px 23px !important;
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        height: 3px;
+        background: $red;
+        width: 0;
+        border-radius: 5px;
+        transition: all 190ms ease-in-out;
+    }
+
+    &::after {
+        content: none !important;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $black;
+
+        &::before {
+            left: 0;
+            width: 100%;
+        }
+    }
+}
+
+.dropdown {
+    .dropdown-menu {
+        div {
+            display: none !important;
+        }
+    }
+
+    a {
+        font-weight: 700;
+        color: $black !important;
+    }
+
+    a::after {
+        content: none !important;
+    }
+
+    div::before {
+        content: none !important;
+    }
+}
+
+.dropdown-menu {
+    border: none !important;
+}

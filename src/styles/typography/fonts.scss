@@ -1,6 +1,20 @@
 @font-face {
     font-family: 'Campton';
-    src: url('/fonts/Campton-Regular.woff') format('woff');
-    font-weight: normal;
+    src: url('../typography/fonts/Campton-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('../typography/fonts/Campton-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Campton';
+    src: url('../typography/fonts/Campton-Light.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
 }

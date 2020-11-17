@@ -4,6 +4,7 @@ import { Container } from 'reactstrap'
 import styles from './styles/modules.scss'
 
 import Navigation from './components/navigation'
+import Hero from './features/hero'
 
 const App = () => {
     return (
@@ -15,7 +16,11 @@ const App = () => {
                     </Container>
                 </section>
             </header>
-            <section></section>
+            <section>
+                <Container>
+                    <Hero />
+                </Container>
+            </section>
         </div>
     )
 }

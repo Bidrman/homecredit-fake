@@ -2,7 +2,7 @@ import React from 'react'
 
 const Wallet = ({ width, height, fill }) => {
     return (
-        <div className={'mb-4 invest__icon'}>
+        <div className={'mb-4 icon'}>
             <svg
                 viewBox='0 0 60 60'
                 fill={fill}

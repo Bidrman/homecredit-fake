@@ -13,6 +13,8 @@ $yellow: #ffe42f !default;
 $white: #ffffff !default;
 $black: #000000 !default;
 $lightGray: #dfe4e6 !default;
+$gray: #e2e5e6 !default;
+$darkGray: #404040 !default;
 
 $colors: () !default;
 $colors: map-merge(
@@ -32,7 +34,7 @@ $colors: map-merge(
 $primary: $red !default;
 $secondary: $yellow !default;
 $success: $purple !default;
-$info: $blue !default;
+$info: #f1f4f5 !default;
 $warning: $yellow !default;
 $danger: $red !default;
 $light: $lightGray !default;
