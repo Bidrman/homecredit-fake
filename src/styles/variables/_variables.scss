@@ -60,9 +60,9 @@ $theme-colors: map-merge($theme-colors, $colors);
 $grid-breakpoints: (
     xs: 0,
     sm: 576px,
-    md: 768px,
-    lg: 980px,
-    xl: 1199px,
+    md: 780px,
+    lg: 1100px,
+    xl: 1230px,
 ) !default;
 
 @include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
@@ -74,9 +74,9 @@ $grid-breakpoints: (
 
 $container-max-widths: (
     sm: 540px,
-    md: 760px,
-    lg: 980px,
-    xl: 1232px,
+    md: 780px,
+    lg: 1230px,
+    xl: 1902px,
 ) !default;
 
 @include _assert-ascending($container-max-widths, '$container-max-widths');

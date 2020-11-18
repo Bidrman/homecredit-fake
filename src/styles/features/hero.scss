@@ -9,12 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
 
-    .hero__left {
+    &__left {
         display: flex;
         width: 65%;
         flex-direction: column;
         justify-content: center;
-        padding-left: 15%;
+        padding-left: 12%;
 
         &-text {
         }
@@ -27,10 +27,45 @@
             flex-direction: row;
         }
     }
-}
 
-.hero__right {
-    display: flex;
-    width: 35%;
-    flex-direction: row;
+    &__right {
+        position: relative;
+        display: flex;
+        flex-flow: row nowrap;
+        width: 35%;
+    }
+
+    &__card {
+        position: absolute;
+        background: $red;
+        padding-top: 20px;
+        border-radius: 0;
+
+        .car-body {
+            position: relative;
+        }
+
+        .card-title {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            font-size: 70px;
+            font-weight: bold;
+            text-shadow: 0 6px rgba(0, 0, 0, 0.3);
+        }
+
+        button {
+            text-transform: uppercase;
+            font-weight: bold;
+            color: $red;
+            background: $white;
+            border: none;
+        }
+
+        @include media-breakpoint-up(md) {
+            bottom: 10%;
+            left: 2%;
+        }
+    }
 }
