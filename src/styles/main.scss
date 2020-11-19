@@ -10,6 +10,10 @@ body {
     color: $darkGray;
 }
 
+.container {
+    padding: 0;
+}
+
 header {
     background: $white;
 }
@@ -104,6 +108,14 @@ a {
     margin-bottom: 4rem !important;
 }
 
+.pl-80 {
+    padding-left: 80px !important;
+}
+
+.pr-80 {
+    padding-right: 80px !important;
+}
+
 @include media-breakpoint-down(md) {
     body {
         text-align: center;
@@ -111,5 +123,11 @@ a {
 
     .ghost {
         display: none;
+    }
+}
+
+.elastic {
+    @include media-breakpoint-down(md) {
+        padding: 0 !important;
     }
 }

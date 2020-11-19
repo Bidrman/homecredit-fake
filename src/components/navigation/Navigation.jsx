@@ -22,8 +22,8 @@ const Navigation = () => {
     }
 
     return (
-        <Navbar expand={'md'} collapseOnSelect className={'w-100 navigation'}>
-            <Col xs='1' lg='12' className={'upper-navigation'}>
+        <Navbar expand={'lg'} collapseOnSelect className={'w-100 navigation'}>
+            <Col xs='1' md='11' lg='12' className={'d-none d-lg-block upper-navigation px-0'}>
                 <Nav className={'d-flex justify-content-end'}>
                     <Nav.Link className={`${styles.upperlink} px-3`}>
                         <Magnifier fill={'#404040'} width={'13'} height={'13'} />
@@ -38,15 +38,22 @@ const Navigation = () => {
                     </Nav.Link>
                 </Nav>
             </Col>
-            <Col xs='0' lg='12'>
+            <Col xs='0' lg='12' className={'d-none d-lg-block'}>
                 <div className={'navigation__hr'}></div>
             </Col>
-            <Col xs='1' lg='1'>
+            <Col xs='1' lg='1' className={'navigation__logo'}>
                 <Navbar.Brand href='https://www.homecredit.cz'>
                     <Homecredit />
                 </Navbar.Brand>
             </Col>
-            <Col xs='1' lg='11'>
+            <Col xs='1' className={'d-flex d-lg-none justify-content-end'}>
+                <Nav className={'d-flex d-lg-none justify-content-end'}>
+                    <Nav.Link className={`px-3`}>
+                        <Magnifier fill={'#404040'} width={'16'} height={'16'} />
+                    </Nav.Link>
+                </Nav>
+            </Col>
+            <Col xs='1' lg='11' className={'px-0'}>
                 <Navbar.Toggle aria-controls='collapsibleNavbar' className={'bg-green'}>
                     <span className={'navbar-toggler-icon'}></span>
                 </Navbar.Toggle>
