@@ -23,7 +23,7 @@ const Navigation = () => {
 
     return (
         <Navbar expand={'lg'} collapseOnSelect className={'w-100 navigation'}>
-            <Col xs='1' md='11' lg='12' className={'d-none d-lg-block upper-navigation px-0'}>
+            <Col xs='1' md='11' lg='12' className={'d-none d-md-block upper-navigation px-0'}>
                 <Nav className={'d-flex justify-content-end'}>
                     <Nav.Link className={`${styles.upperlink} px-3`}>
                         <Magnifier fill={'#404040'} width={'13'} height={'13'} />
@@ -46,14 +46,14 @@ const Navigation = () => {
                     <Homecredit />
                 </Navbar.Brand>
             </Col>
-            <Col xs='1' className={'d-flex d-lg-none justify-content-end'}>
-                <Nav className={'d-flex d-lg-none justify-content-end'}>
+            <Col xs='1' className={'d-flex d-md-none justify-content-end'}>
+                <Nav className={'d-flex d-md-none justify-content-end'}>
                     <Nav.Link className={`px-3`}>
                         <Magnifier fill={'#404040'} width={'16'} height={'16'} />
                     </Nav.Link>
                 </Nav>
             </Col>
-            <Col xs='1' lg='11' className={'px-0'}>
+            <Col xs='1' md='12' lg='11' className={'px-0'}>
                 <Navbar.Toggle aria-controls='collapsibleNavbar' className={'bg-green'}>
                     <span className={'navbar-toggler-icon'}></span>
                 </Navbar.Toggle>

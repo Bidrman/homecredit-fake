@@ -60,8 +60,8 @@ $theme-colors: map-merge($theme-colors, $colors);
 $grid-breakpoints: (
     xs: 0,
     sm: 480px,
-    md: 950px,
-    lg: 1050px,
+    md: 990px,
+    lg: 1134px,
     xl: 1280px,
 ) !default;
 
@@ -74,8 +74,8 @@ $grid-breakpoints: (
 
 $container-max-widths: (
     xs: 760px,
-    sm: 780px,
-    md: 1134px,
+    sm: 990px,
+    md: 1135px,
     lg: 1280px,
     xl: 1902px,
 ) !default;
