@@ -23,7 +23,7 @@ const App = () => {
                     <Hero />
                 </Container>
             </section>
-            <section>
+            <section className={'bg-light'}>
                 <Container className={'px-0 pl-80 pr-80 elastic'}>
                     <Loans />
                 </Container>

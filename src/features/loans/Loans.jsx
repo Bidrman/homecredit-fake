@@ -11,7 +11,7 @@ import Car from '../../components/icons/car'
 const Loans = () => {
     return (
         <div className={'loans'}>
-            <Row className={'mt-2 mt-md-4 d-flex flex-row justify-content-center justify-content-md-around'}>
+            <Row className={'pt-2 pt-md-4 d-flex flex-row justify-content-center justify-content-md-around'}>
                 <CustomCard
                     className={'biggerCard mt-1 mb-4 mb-lg-5'}
                     backgroundImage
@@ -41,14 +41,14 @@ const Loans = () => {
                     className={'smallerCard mb-3'}
                     title={'nákup na splátky'}
                     text={'Snižte si splátky, ušetřete a kupte si něco hezkého na sebe'}
-                    buttonText={'více o konsolidaci'}
+                    buttonText={'více o nákupu a splátky'}
                     icon={<ShoppingBag fill={'#d30010'} width={'42'} height={'42'} />}
                 />{' '}
                 <CustomCard
                     className={'smallerCard mb-3'}
                     title={'financování auta'}
                     text={'Snižte si splátky, ušetřete a kupte si něco hezkého na sebe'}
-                    buttonText={'více o konsolidaci'}
+                    buttonText={'více o financování auta'}
                     icon={<Car fill={'#d30010'} width={'42'} height={'42'} />}
                 />
             </Row>

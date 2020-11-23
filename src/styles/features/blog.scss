@@ -1,0 +1,13 @@
+.blog {
+    text-align: center;
+
+    &__heading {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: bold;
+        line-height: 1.29;
+        color: $black;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+}

@@ -1,7 +1,15 @@
 import React from 'react'
 import { Card, CardBody, CardText, CardTitle, Button } from 'reactstrap'
 
-const CustomCard = ({ className, title, text, buttonText, backgroundImage = false, icon = null }) => {
+const CustomCard = ({
+    className,
+    title,
+    text,
+    buttonText,
+    backgroundImage = false,
+    icon = null,
+    footer = null,
+}) => {
     let content
     if (backgroundImage) {
         content = (
@@ -27,7 +35,10 @@ const CustomCard = ({ className, title, text, buttonText, backgroundImage = fals
     return (
         <Card className={className}>
             {icon ? icon : ''}
-            <CardBody>{content}</CardBody>
+            <CardBody>
+                {content}
+                {footer ? footer : ''}
+            </CardBody>
         </Card>
     )
 }
