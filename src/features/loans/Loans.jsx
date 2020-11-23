@@ -29,7 +29,7 @@ const Loans = () => {
                     icon={<Card fill={'#d30010'} width={'50'} height={'45'} />}
                 />
             </Row>
-            <Row className={'d-flex flex-row justify-content-center justify-content-md-around'}>
+            <Row className={'d-flex flex-row justify-content-center justify-content-lg-around'}>
                 <CustomCard
                     className={'smallerCard mb-3'}
                     title={'konsolidace'}
