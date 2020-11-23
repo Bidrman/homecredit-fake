@@ -16,7 +16,7 @@
         .icon {
             position: absolute;
             left: 2rem;
-            top: 1.2rem;
+            top: 2.5rem;
         }
 
         div.card-body {
@@ -29,7 +29,7 @@
             width: 55%;
             justify-content: flex-start;
             text-align: left;
-            padding: 5rem 0 2rem 2rem;
+            padding: 6.5rem 0 3.3rem 2rem;
         }
 
         .right {
@@ -45,7 +45,7 @@
 
         &:nth-of-type(2) .right {
             background-image: url(../../files/images/cards/zena.png);
-            background-position: center;
+            background-position: right;
         }
 
         .card-title {
@@ -62,7 +62,7 @@
             font-weight: 300;
             line-height: 1.33;
             color: #707070;
-            margin-bottom: 1.5rem !important;
+            margin-bottom: 2rem !important;
             margin-top: 1rem !important;
         }
 
