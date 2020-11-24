@@ -1,5 +1,5 @@
 .subfooter {
-    background: $lightGray;
+    background: $white;
     padding: 48px 0;
 
     &__list {
@@ -10,16 +10,16 @@
     }
 
     &__link {
-        color: $white;
+        color: $darkGray;
         font-size: 16px;
         position: relative;
-        text-decoration: underline;
         transition: color 0.25s;
         font-weight: 300;
+        padding-left: 35px;
 
         &::before {
             position: absolute;
-            left: -35px;
+            left: 0;
             content: '🡒';
             color: $red;
             font-size: 17px;
@@ -32,7 +32,7 @@
             text-decoration: underline;
 
             &::before {
-                left: -27px;
+                left: 7px;
             }
         }
     }

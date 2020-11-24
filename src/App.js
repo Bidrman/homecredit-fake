@@ -8,6 +8,8 @@ import Hero from './features/hero'
 import Loans from './features/loans'
 import Blog from './features/blog'
 
+import Subfooter from './features/subfooter'
+
 const App = () => {
     return (
         <div className={'page'}>
@@ -39,6 +41,17 @@ const App = () => {
                     </Container>
                 </div>
             </section>
+            <section>
+                <div className='inner-container'>
+                    <Container className={'px-0'}></Container>
+                </div>
+            </section>
+            <section></section>
+            <footer>
+                <section className={'subfooter'}>
+                    <Subfooter />
+                </section>
+            </footer>
         </div>
     )
 }
