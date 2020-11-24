@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Magnifier = ({ width, height, fill }) => {
+const Magnifier = ({ width, height, fill, className }) => {
     return (
-        <div className={'icon'}>
+        <div className={className}>
             <svg xmlns='http://www.w3.org/2000/svg' width={width} height={height} viewBox='0 0 13 13'>
                 <path
                     fill={fill}

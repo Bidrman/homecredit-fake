@@ -17,7 +17,7 @@ const CustomCard = ({
                 <div className='left'>
                     <CardTitle>{title}</CardTitle>
                     <CardText>{text}</CardText>
-                    <Button className={'radius-2'}>{buttonText}</Button>
+                    <Button className={'radius-2 card-button'}>{buttonText}</Button>
                 </div>
                 <div className='right'></div>
             </>
@@ -27,7 +27,7 @@ const CustomCard = ({
             <>
                 <CardTitle>{title}</CardTitle>
                 <CardText>{text}</CardText>
-                <Button className={'radius-2'}>{buttonText}</Button>
+                <Button className={'radius-2 card-button'}>{buttonText}</Button>
             </>
         )
     }

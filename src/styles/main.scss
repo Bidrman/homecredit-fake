@@ -14,6 +14,11 @@ body {
     padding: 0;
 }
 
+.inner-container {
+    max-width: 1206px !important;
+    margin: 0 auto;
+}
+
 header {
     background: $white;
 }

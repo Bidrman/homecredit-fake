@@ -13,9 +13,11 @@ const App = () => {
         <div className={'page'}>
             <header>
                 <section>
-                    <Container className={'px-0 pl-80 pr-80 elastic'}>
-                        <Navigation />
-                    </Container>
+                    <div className='inner-container'>
+                        <Container className={'px-0 '}>
+                            <Navigation />
+                        </Container>
+                    </div>
                 </section>
             </header>
             <section>
@@ -24,14 +26,18 @@ const App = () => {
                 </Container>
             </section>
             <section className={'bg-light'}>
-                <Container className={'px-0 pl-80 pr-80 elastic'}>
-                    <Loans />
-                </Container>
+                <div className='inner-container'>
+                    <Container className={'px-0'}>
+                        <Loans />
+                    </Container>
+                </div>
             </section>
             <section>
-                <Container className={'px-0 pl-80 pr-80 elastic'}>
-                    <Blog />
-                </Container>
+                <div className='inner-container'>
+                    <Container className={'px-0'}>
+                        <Blog />
+                    </Container>
+                </div>
             </section>
         </div>
     )
