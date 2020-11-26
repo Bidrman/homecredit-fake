@@ -7,8 +7,8 @@ import Navigation from './components/navigation'
 import Hero from './features/hero'
 import Loans from './features/loans'
 import Blog from './features/blog'
-
 import Subfooter from './features/subfooter'
+import Jobs from './features/jobs/Jobs'
 
 const App = () => {
     return (
@@ -42,9 +42,9 @@ const App = () => {
                 </div>
             </section>
             <section>
-                <div className='inner-container'>
-                    <Container className={'px-0'}></Container>
-                </div>
+                <Container className={'px-0'}>
+                    <Jobs />
+                </Container>
             </section>
             <section></section>
             <footer>

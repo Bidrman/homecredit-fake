@@ -1,0 +1,30 @@
+.jobs {
+    position: relative;
+    color: $white;
+    width: 100%;
+    height: 441px;
+    background-image: url(../../files/images/backgrounds/kariera.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        position: absolute;
+        max-width: 400px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    &__heading {
+        line-height: 1.29;
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        color: $red !important;
+        border-radius: 2px !important;
+    }
+}
