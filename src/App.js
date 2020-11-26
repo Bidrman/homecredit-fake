@@ -7,8 +7,10 @@ import Navigation from './components/navigation'
 import Hero from './features/hero'
 import Loans from './features/loans'
 import Blog from './features/blog'
+import Slider from './features/slider'
 import Subfooter from './features/subfooter'
 import Jobs from './features/jobs/Jobs'
+import Partners from './features/partners/Partners'
 
 const App = () => {
     return (
@@ -38,6 +40,20 @@ const App = () => {
                 <div className='inner-container'>
                     <Container className={'px-0'}>
                         <Blog />
+                    </Container>
+                </div>
+            </section>
+            <section className={'bg-light'}>
+                <div className='inner-container'>
+                    <Container className={'px-0'}>
+                        <Slider />
+                    </Container>
+                </div>
+            </section>
+            <section>
+                <div className='inner-container'>
+                    <Container className={'px-0'}>
+                        <Partners />
                     </Container>
                 </div>
             </section>

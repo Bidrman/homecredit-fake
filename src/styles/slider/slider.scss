@@ -1,0 +1,40 @@
+.swiper {
+    &__quote {
+    }
+
+    &__quote-text {
+    }
+
+    &__link {
+        text-decoration: underline;
+        margin-left: 0.69rem;
+        margin-right: 0.69rem;
+    }
+
+    &-slide {
+        box-sizing: border-box;
+        padding: 2rem 0;
+    }
+
+    &-container {
+        padding-bottom: 4.5rem !important;
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 3rem !important;
+        }
+    }
+
+    &-pagination {
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: 1.5rem !important;
+        }
+    }
+
+    &-pagination-bullet {
+        width: 10px !important;
+        height: 10px !important;
+        background: #404040 !important;
+    }
+}
