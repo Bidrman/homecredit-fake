@@ -75,21 +75,21 @@ const Navigation = () => {
                             >
                                 <NavDropdown.Item
                                     href='/publishers/radio'
-                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                    className={'font-weight-normal text-capitalize  d-block py-3 font-16'}
                                 >
                                     O konsolidaci a kalkulačka
                                 </NavDropdown.Item>
 
                                 <NavDropdown.Item
                                     href='/publishers/podcasters'
-                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                    className={'font-weight-normal text-capitalize  d-block py-3 font-16'}
                                 >
                                     Audio Podcasters
                                 </NavDropdown.Item>
 
                                 <NavDropdown.Item
                                     href='/publishers/videopodcasters'
-                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                    className={'font-weight-normal text-capitalize  d-block py-3 font-16'}
                                 >
                                     Video Podcasters
                                 </NavDropdown.Item>
