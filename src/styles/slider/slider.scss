@@ -1,8 +1,32 @@
 .swiper {
-    &__quote {
-    }
+    &__container {
+        position: relative;
+        background-image: url(../../files/images/backgrounds/3.png);
+        background-repeat: no-repeat;
+        background-position: 20px 0;
 
-    &__quote-text {
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            display: block;
+            width: 205px;
+            height: 205px;
+            transform: scaleY(-1);
+            background-image: url(../../files/images/backgrounds/3.png);
+            background-repeat: no-repeat;
+            background-position: 100% 100%;
+        }
+
+        @include media-breakpoint-down(sm) {
+            background-image: none;
+
+            &::before {
+                content: none;
+            }
+        }
     }
 
     &__link {
@@ -13,14 +37,14 @@
 
     &-slide {
         box-sizing: border-box;
-        padding: 2rem 0;
+        padding: 1.6rem 0 1rem;
     }
 
     &-container {
-        padding-bottom: 4.5rem !important;
+        padding-bottom: 3rem !important;
 
-        @include media-breakpoint-down(sm) {
-            padding-bottom: 3rem !important;
+        @include media-breakpoint-up(sm) {
+            padding-bottom: 4rem !important;
         }
     }
 

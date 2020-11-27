@@ -66,15 +66,22 @@
 }
 
 .dropdown {
+    border: 1px solid transparent;
+    border-radius: 0 !important;
+
     .dropdown-menu {
         div {
             display: none !important;
         }
     }
 
-    a {
+    a:not(#collasible-nav-dropdown) {
         font-weight: 700;
         color: $black !important;
+    }
+
+    div {
+        display: none;
     }
 
     a::after {
@@ -84,8 +91,4 @@
     div::before {
         content: none !important;
     }
-}
-
-.dropdown-menu {
-    border: none !important;
 }

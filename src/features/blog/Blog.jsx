@@ -14,7 +14,7 @@ const Blog = () => {
                     title={
                         <>
                             <span>19.6.2018</span>
-                            <h4>5 věcí, které dělají páry při správě svých účtů špatně</h4>
+                            <h4 className={'my-1'}>5 věcí, které dělají páry při správě svých účtů špatně</h4>
                         </>
                     }
                     buttonText={'Celý článek'}
@@ -39,7 +39,7 @@ const Blog = () => {
                     title={
                         <>
                             <span>19.6.2018</span>
-                            <h4>5 věcí, které dělají páry při správě svých účtů špatně</h4>
+                            <h4 className={'my-1'}>5 věcí, které dělají páry při správě svých účtů špatně</h4>
                         </>
                     }
                     buttonText={'Celý článek'}
@@ -64,7 +64,7 @@ const Blog = () => {
                     title={
                         <>
                             <span>19.6.2018</span>
-                            <h4>5 věcí, které dělají páry při správě svých účtů špatně</h4>
+                            <h4 className={'my-1'}>5 věcí, které dělají páry při správě svých účtů špatně</h4>
                         </>
                     }
                     buttonText={'Celý článek'}

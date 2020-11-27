@@ -11,7 +11,7 @@ const Slider = () => {
     SwiperCore.use([Pagination, Autoplay])
 
     return (
-        <div>
+        <div className={'swiper__container'}>
             <Col xs='12' md='6' className={'mx-auto px-2 py-0'}>
                 <div className={'d-flex flex-row justify-content-center align-items-center w-100'}>
                     <a href='#' className={' mt-5 swiper__link'}>

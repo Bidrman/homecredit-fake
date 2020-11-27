@@ -36,15 +36,52 @@ a {
 
 // background
 .bg-gray {
-    background: $lightGray;
+    background-color: $lightGray;
 }
 
 .bg-light {
-    background: rgb(179, 212, 252);
+    background-color: #f1f4f5 !important;
 }
 
 .bg-red {
-    background: $red;
+    background-color: $red;
+}
+
+.bg-card {
+    background-image: url(../files/images/backgrounds/card.png);
+    background-repeat: no-repeat;
+    background-position: 105% 100%;
+}
+
+.bg-plant {
+    background-image: url(../files/images/backgrounds/plant.jpg);
+    background-repeat: no-repeat;
+    background-position: 0% 50%;
+
+    @include media-breakpoint-down(lg) {
+        background-image: none;
+    }
+}
+
+.bg-clip {
+    background-image: url(../files/images/backgrounds/clips.png);
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+
+    @include media-breakpoint-down(lg) {
+        background-image: none;
+    }
+}
+
+.bg-objects {
+    background-image: url(../files/images/backgrounds/plant.jpg), url(../files/images/backgrounds/clips.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0% 49%, 100% 52%;
+    z-index: 20;
+
+    @include media-breakpoint-down(lg) {
+        background-image: none;
+    }
 }
 //border
 .rounded {

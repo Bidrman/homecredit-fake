@@ -8,7 +8,7 @@ import Lekarna from '../../files/images/logo/lekarna.png'
 const Partners = () => {
     return (
         <div className={'d-flex flex-column pb-1 pb-md-3 partners'}>
-            <Col className={'text-center'}>
+            <Col className={'text-center pb-1'}>
                 <h3
                     className={
                         'text-uppercase text-black font-weight-bold font-28 mt-3 mt-md-5 partners__heading'
@@ -17,7 +17,7 @@ const Partners = () => {
                     Z porftolia našich partnerů
                 </h3>
             </Col>
-            <Col className={'d-flex flex-row justify-content-between px-0'}>
+            <Col className={'d-flex flex-column align-items-center flex-md-row justify-content-between px-0'}>
                 <Card className={'partners__card mb-3 mb-lg-4'}>
                     <CardBody className={'partners__image'}>
                         <CardTitle className={'w-75'}>
@@ -59,7 +59,7 @@ const Partners = () => {
             </Col>
 
             <Col>
-                <p className={'text-center'}>
+                <p className={'text-center py-1 py-md-3'}>
                     <a href='#' className={'more-info'}>
                         Více o našich partnerech
                     </a>

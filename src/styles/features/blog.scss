@@ -1,6 +1,19 @@
 .blog {
     text-align: center;
 
+    &__card {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 374px;
+        border-color: transparent;
+        margin-bottom: 1.3rem;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+
+        &:hover {
+            box-shadow: 0 30px 25px 0 rgba(208, 208, 208, 0.5);
+        }
+    }
+
     .card-body {
         padding: 0;
         display: flex;
@@ -14,7 +27,12 @@
         line-height: 1.29;
         color: #282828;
         margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 3rem;
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__row {
@@ -27,18 +45,6 @@
             flex-direction: row;
             justify-content: space-between;
             padding-bottom: 3rem;
-        }
-    }
-
-    &__card {
-        display: flex;
-        flex-flow: column nowrap;
-        width: 374px;
-        border-color: transparent;
-        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
-
-        &:hover {
-            box-shadow: 0 30px 25px 0 rgba(208, 208, 208, 0.5);
         }
     }
 
@@ -95,6 +101,7 @@
         color: $red;
         text-decoration: underline;
         padding: 0;
+        margin-bottom: 0.8rem;
 
         &:hover {
             text-decoration: none;

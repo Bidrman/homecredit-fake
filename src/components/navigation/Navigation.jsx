@@ -67,21 +67,30 @@ const Navigation = () => {
                         <Nav.Link className={`${styles.dropdown} nav-item`}>
                             <NavDropdown
                                 title='Konsolidace'
-                                className={styles.link}
+                                className={`${styles.link} border-0`}
                                 id='collasible-nav-dropdown'
                                 show={show}
                                 onMouseEnter={showDropdown}
                                 onMouseLeave={hideDropdown}
                             >
-                                <NavDropdown.Item href='/publishers/radio'>
+                                <NavDropdown.Item
+                                    href='/publishers/radio'
+                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                >
                                     O konsolidaci a kalkulačka
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href='/publishers/podcasters'>
+
+                                <NavDropdown.Item
+                                    href='/publishers/podcasters'
+                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                >
                                     Audio Podcasters
                                 </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href='/publishers/videopodcasters'>
+
+                                <NavDropdown.Item
+                                    href='/publishers/videopodcasters'
+                                    className={'font-weight-normal text-capitalize  d-block py-3'}
+                                >
                                     Video Podcasters
                                 </NavDropdown.Item>
                             </NavDropdown>

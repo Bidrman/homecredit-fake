@@ -14,7 +14,7 @@ import Partners from './features/partners/Partners'
 
 const App = () => {
     return (
-        <div className={'page'}>
+        <div className={'page bg-objects'}>
             <header>
                 <section>
                     <div className='inner-container'>
@@ -29,7 +29,7 @@ const App = () => {
                     <Hero />
                 </Container>
             </section>
-            <section className={'bg-light'}>
+            <section className={'bg-light bg-card'}>
                 <div className='inner-container'>
                     <Container className={'px-0'}>
                         <Loans />

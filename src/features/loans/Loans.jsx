@@ -13,7 +13,7 @@ const Loans = () => {
         <div className={'loans'}>
             <Row className={'pt-2 pt-md-4 d-flex flex-row justify-content-center justify-content-md-around'}>
                 <CustomCard
-                    className={'biggerCard mt-1 mb-4 mb-lg-5'}
+                    className={'biggerCard mt-1'}
                     backgroundImage
                     title={'půjčky'}
                     text={'S extra nízkým úrokem, právě pro vás. Dělejte to, co máte rádi'}
@@ -21,7 +21,7 @@ const Loans = () => {
                     icon={<HandLend fill={'#d30010'} width={'50'} height={'45'} />}
                 />
                 <CustomCard
-                    className={'biggerCard mt-1 mb-4 mb-lg-5'}
+                    className={'biggerCard mt-1'}
                     backgroundImage
                     title={'kreditní karta'}
                     text={'Mějte peníze stále k dispozici. Navíc karta pomůže v nouzi.'}
@@ -29,7 +29,7 @@ const Loans = () => {
                     icon={<Card fill={'#d30010'} width={'50'} height={'45'} />}
                 />
             </Row>
-            <Row className={'d-flex flex-row justify-content-center justify-content-lg-around'}>
+            <Row className={'d-flex flex-row justify-content-center justify-content-lg-around pb-3 pb-md-5'}>
                 <CustomCard
                     className={'smallerCard mb-3'}
                     title={'konsolidace'}

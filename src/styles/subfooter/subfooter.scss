@@ -6,6 +6,10 @@
         height: 8px;
     }
 
+    &__heading {
+        margin-bottom: 1.3rem !important;
+    }
+
     &__list {
         list-style: none;
     }
@@ -118,5 +122,9 @@
 
     &__apps {
         padding: 0 3rem;
+    }
+
+    &-logos {
+        padding: 1.2rem 0;
     }
 }

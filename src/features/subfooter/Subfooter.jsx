@@ -21,7 +21,7 @@ const Subfooter = () => {
                                 Naše produkty
                             </h4>
                         </Navbar.Toggle>
-                        <h4 className='text-uppercase font-weight-bold text-black mb-3 ghost font-16 ls-1 '>
+                        <h4 className='text-uppercase font-weight-bold text-black ghost font-16 ls-1 subfooter__heading'>
                             Naše produkty
                         </h4>
                         <Navbar.Collapse id={'footerHomecredit '}>
@@ -60,7 +60,7 @@ const Subfooter = () => {
                                 O home credit
                             </h4>
                         </Navbar.Toggle>
-                        <h4 className='text-uppercase font-weight-bold text-black mb-3 ghost font-16 ls-1'>
+                        <h4 className='text-uppercase font-weight-bold text-black ghost font-16 ls-1 subfooter__heading'>
                             O home credit
                         </h4>
                         <Navbar.Collapse
@@ -103,7 +103,7 @@ const Subfooter = () => {
                                 Podpora
                             </h4>
                         </Navbar.Toggle>
-                        <h4 className='text-uppercase font-weight-bold text-black mb-3 ghost font-16 ls-1'>
+                        <h4 className='text-uppercase font-weight-bold text-black ghost font-16 ls-1 subfooter__heading'>
                             Podpora
                         </h4>
                         <Navbar.Collapse
@@ -136,10 +136,10 @@ const Subfooter = () => {
                         </Navbar.Collapse>
                     </Col>
                     <Col xs='12' sm='6' md='2'>
-                        <h4 className='text-uppercase font-weight-bold text-black mb-3  font-16 ls-1'>
+                        <h4 className='text-uppercase font-weight-bold text-black font-16 ls-1 subfooter__heading'>
                             Sociální sítě
                         </h4>
-                        <div className='mt-2 mb-3 d-flex flex-row align-items-center justify-content-center justify-content-lg-start'>
+                        <div className='mt-2 mb-3 d-flex flex-row align-items-center justify-content-center justify-content-lg-between'>
                             <div className='icon mr-2'>
                                 <Facebook width='24' height='24' fill='#404040' />
                             </div>
@@ -156,11 +156,11 @@ const Subfooter = () => {
                     </Col>
                 </Navbar>
                 <div className={'subfooter__apps'}>
-                    <Col xs='12' className={'py-4 d-flex justify-content-center bg-light w-100'}>
+                    <Col xs='12' className={'d-flex justify-content-center bg-light w-100 subfooter-logos'}>
                         <div>
                             <Google fill='#fff' />
                         </div>
-                        <div className={'mx-2'}>
+                        <div className={'mx-3'}>
                             <img src={logo} alt='noAlt' />
                         </div>
                         <div>
