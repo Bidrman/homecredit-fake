@@ -1,0 +1,72 @@
+.partners {
+    &__heading {
+        margin-bottom: 1.5rem;
+    }
+
+    &__card {
+        position: relative;
+        width: 374px;
+        border-color: transparent;
+    }
+
+    &__card:first-of-type {
+        .partners__card-heading {
+            color: #272256;
+        }
+        .partners__image {
+            background-image: url(../../files/images/cards/fotolab.png);
+            background-repeat: no-repeat;
+            background-position: 99% calc(50% + 15px);
+            background-color: #f1f4f5;
+            padding: 1.7rem 1.5rem;
+        }
+    }
+
+    &__card:nth-of-type(2) {
+        .partners__card-heading,
+        .partners__text {
+            color: #ffffff;
+        }
+        .partners__image {
+            background-image: url(../../files/images/cards/dok.png);
+            background-repeat: no-repeat;
+            background-position: 100% 0%;
+            background-color: #272256;
+            padding: 1.7rem 1.5rem;
+        }
+
+        .partners__logo-wrapper {
+            position: absolute;
+            right: 1rem;
+            bottom: 1.1rem;
+        }
+    }
+
+    &__card:nth-of-type(3) {
+        .partners__card-heading {
+            color: #3e8936;
+        }
+        .partners__image {
+            background-image: url(../../files/images/cards/lekarna.png);
+            background-repeat: no-repeat;
+            background-position: 90% calc(50% + 15px);
+            background-color: #f1f4f5;
+            padding: 1.7rem 1.5rem;
+        }
+
+        .partners__logo-wrapper {
+            position: absolute;
+            bottom: 2rem;
+        }
+    }
+
+    .more-info {
+        text-decoration: underline;
+    }
+
+    @include media-breakpoint-up(md) {
+        &__heading {
+            margin-bottom: 2.2rem;
+        }
+    }
+}
