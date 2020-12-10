@@ -1,5 +1,17 @@
 @import '../../styles/variables/variables';
 
+.upperMenu {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 1334px) {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
 .upperlink {
     display: flex;
     flex-flow: row nowrap;
@@ -37,6 +49,10 @@
     text-transform: uppercase;
     font-weight: 700 !important;
     padding: 10px 23px !important;
+
+    @media only screen and (max-width: 999px) {
+        padding: 10px 18px !important;
+    }
 
     &::before {
         content: '';

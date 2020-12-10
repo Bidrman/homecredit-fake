@@ -1,4 +1,10 @@
 .loans {
+    &__row {
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+        }
+    }
+
     .biggerCard {
         position: relative;
         border: 1px solid transparent !important;
@@ -6,11 +12,11 @@
         width: 583px;
         box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.01);
         transform: scale(0.88);
-        margin-bottom: 30px;
 
         @include media-breakpoint-up(md) {
             transform: scale(1);
             margin-bottom: 35px;
+            margin-bottom: 30px;
         }
 
         &:hover {
@@ -34,12 +40,20 @@
             justify-content: flex-start;
             text-align: left;
             padding: 6.5rem 0 3.3rem 2rem;
+
+            @include media-breakpoint-down(xs) {
+                width: 100%;
+            }
         }
 
         .right {
             width: 45%;
             height: 100%;
             background-size: cover;
+
+            @include media-breakpoint-down(xs) {
+                width: 0;
+            }
         }
 
         &:first-of-type .right {

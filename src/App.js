@@ -14,14 +14,10 @@ import Partners from './features/partners/Partners'
 
 const App = () => {
     return (
-        <div className={'page bg-objects'}>
+        <div className={'page'}>
             <header>
                 <section>
-                    <div className='inner-container'>
-                        <Container className={'px-0 '}>
-                            <Navigation />
-                        </Container>
-                    </div>
+                    <Navigation />
                 </section>
             </header>
             <section>

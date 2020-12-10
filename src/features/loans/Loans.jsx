@@ -11,7 +11,11 @@ import Car from '../../components/icons/car'
 const Loans = () => {
     return (
         <div className={'loans'}>
-            <Row className={'pt-2 pt-md-4 d-flex flex-row justify-content-center justify-content-md-around'}>
+            <Row
+                className={
+                    ' w-100 mx-auto pt-2 pt-md-4 d-flex flex-row justify-content-center justify-content-md-around loans__row'
+                }
+            >
                 <CustomCard
                     className={'biggerCard mt-1'}
                     backgroundImage
@@ -29,23 +33,27 @@ const Loans = () => {
                     icon={<Card fill={'#d30010'} width={'50'} height={'45'} />}
                 />
             </Row>
-            <Row className={'d-flex flex-row justify-content-center justify-content-lg-around pb-3 pb-md-5'}>
+            <Row
+                className={
+                    'w-100 mx-auto d-flex flex-row justify-content-center justify-content-lg-around pb-3 pb-md-5 '
+                }
+            >
                 <CustomCard
-                    className={'smallerCard mb-3'}
+                    className={'smallerCard mb-3 mx-auto'}
                     title={'konsolidace'}
                     text={'Snižte si splátky, ušetřete a kupte si něco hezkého na sebe'}
                     buttonText={'více o konsolidaci'}
                     icon={<Atom fill={'#d30010'} width={'42'} height={'42'} />}
                 />
                 <CustomCard
-                    className={'smallerCard mb-3'}
+                    className={'smallerCard mb-3 mx-auto'}
                     title={'nákup na splátky'}
                     text={'Snižte si splátky, ušetřete a kupte si něco hezkého na sebe'}
                     buttonText={'více o nákupu a splátky'}
                     icon={<ShoppingBag fill={'#d30010'} width={'42'} height={'42'} />}
                 />{' '}
                 <CustomCard
-                    className={'smallerCard mb-3'}
+                    className={'smallerCard mb-3 mx-auto'}
                     title={'financování auta'}
                     text={'Snižte si splátky, ušetřete a kupte si něco hezkého na sebe'}
                     buttonText={'více o financování auta'}

@@ -9,6 +9,10 @@
         width: 374px;
         height: 180px;
         border-color: transparent;
+
+        @include media-breakpoint-down(xs) {
+            transform: scale(90%);
+        }
     }
 
     &__card:first-of-type {
